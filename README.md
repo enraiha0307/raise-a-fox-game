@@ -11,9 +11,9 @@ npm install
 
 3.To start the game run:
 npm run dev
-OR
-You can just run
 
+OR
+1.To just play the game run:
 docker-compose up
 
 and the game will start in you browser.
