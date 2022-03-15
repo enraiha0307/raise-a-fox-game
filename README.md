@@ -12,7 +12,7 @@ and the game will start in you browser.
 ```
 You can also try running the docker-image as:
 ```
-docker run --init --publish 1234:1234 akanksha/fox-game:v1
+docker run --init --publish 1234:1234 akanksha0307/fox-game:v1
 ```
 
 # Steps for installation
