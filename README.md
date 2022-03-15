@@ -1,6 +1,20 @@
 # raise-a-fox-game
 A cool browser based game. Raise your own fox pet! Feed it, Clean it, Pet it but don't let it die :(
 
+# To play the game
+```
+1. Clone the repo
+git clone https://github.com/enraiha0307/raise-a-fox-game.git
+2. run:
+docker-compose up
+
+and the game will start in you browser.
+```
+You can also try running the docker-image as:
+```
+docker run --init --publish 1234:1234 akanksha/fox-game:v1
+```
+
 # Steps for installation
 ```
 1. first clone the repo
@@ -11,12 +25,6 @@ npm install
 
 3.To start the game run:
 npm run dev
-
-OR
-1.To just play the game run:
-docker-compose up
-
-and the game will start in you browser.
 ```
 
 ![Screenshot from 2021-11-23 19-28-36 11](https://user-images.githubusercontent.com/26249973/143039150-17e33285-ddfd-4a38-9399-7c8374ec21b5.png)
