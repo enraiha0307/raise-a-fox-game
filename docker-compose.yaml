@@ -1,0 +1,6 @@
+version: '3'
+services:
+  fox-game:
+    image: akanksha0307/fox-game:v1
+    ports:
+      - "1234:1234"
