@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fox-game-deployment
+  labels:
+    app: fox-game
+spec:
+  selector:
+    matchLabels:
+      app: fox-game
+  template:
+    metadata:
+      labels:
+        app: fox-game
+    spec:
+      containers:
+       - name: fox-game
+         image: akanksha0307/fox-game:v2
+         resources:
+          limits:
+           memory: 800Mi
+           cpu: "2"
+          requests:
+            memory: 512Mi
+            cpu: "1"
+         ports:
+          - containerPort: 1234
