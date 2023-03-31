@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fox-game-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "raisethefox.com"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: fox-game-service
+            port:
+              number: 80
