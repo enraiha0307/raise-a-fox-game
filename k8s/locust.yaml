@@ -1,15 +1,32 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: locust-script
+data:
+  locustfile.py: |-
+    from locust import HttpUser, task, between
+    
+    class QuickstartUser(HttpUser):
+    wait_time = between(0.7, 1.3)
+
+    @task
+    def hello_world(self):
+        self.client.get("/", headers={"Host": "raisethefox.com"})
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: locust-script-app
+  name: locust-deployment
+  labels:
+    app: locust-app
 spec:
   selector:
     matchLabels:
-      app: locust
+      app: locust-app
   template:
     metadata:
       labels:
-        app: locust
+        app: locust-app
     spec:
       containers:
       - image: locustio/locust
@@ -21,14 +38,25 @@ spec:
           name: locust-script
         resources:
          limits:
-           memory: 800Mi
+           memory: 2000Mi
            cpu: "2"
          requests:
-           memory: 512Mi
+           memory: 1000Mi
            cpu: "1"
       volumes:
       - configMap:
         name: locust-script
-      
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name:  locust-service
+spec:
+  selector:
+    app:  locust-app
+  type:  LoadBalancer
+  ports:
+    - port:  8089
+      targetPort:  8089
         
 
