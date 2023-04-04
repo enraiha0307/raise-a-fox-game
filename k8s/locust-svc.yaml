@@ -4,7 +4,7 @@ metadata:
   name:  locust-service
 spec:
   selector:
-    app:  locust
+    app:  locust-app
   type:  LoadBalancer
   ports:
     - port:  8089
