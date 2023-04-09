@@ -27,6 +27,11 @@ npm install
 npm run dev
 ```
 
+## Blogs related to this:
+- Integrate Locust into your K8s Project
+- Integrate Prometheus with your K8s Project
+- [How to run your website on Kubernetes (Minikube)?](https://akku.hashnode.dev/how-to-run-your-website-on-kubernetes-minikube)
+
 ![Screenshot from 2021-11-23 19-28-36 11](https://user-images.githubusercontent.com/26249973/143039150-17e33285-ddfd-4a38-9399-7c8374ec21b5.png)
 ![Screenshot from 2021-11-23 19-28-47 14](https://user-images.githubusercontent.com/26249973/143039228-312f2e21-3398-44da-b86a-0f397e4ee500.png)
 ![Screenshot from 2021-11-23 19-30-14 19](https://user-images.githubusercontent.com/26249973/143039343-44554c81-29d1-4e26-b7d0-89fcc9e61a81.png)
