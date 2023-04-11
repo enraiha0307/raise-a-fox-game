@@ -28,7 +28,7 @@ npm run dev
 ```
 
 ## Blogs related to this:
-- Integrate Locust into your K8s Project
+- [Integrate Locust into your K8s Project](https://akku.hashnode.dev/integrate-locust-into-your-k8s-project)
 - [Integrate Prometheus with your K8s Project](https://akku.hashnode.dev/integrate-prometheus-with-your-k8s-project)
 - [How to run your website on Kubernetes (Minikube)?](https://akku.hashnode.dev/how-to-run-your-website-on-kubernetes-minikube)
 
