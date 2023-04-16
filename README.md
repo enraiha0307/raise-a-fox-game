@@ -27,10 +27,6 @@ npm install
 npm run dev
 ```
 
-## K8s installation:
-
-{TODOs}
-
 ## Blogs related to this:
 - [How to run your website on Kubernetes (Minikube)?](https://akku.hashnode.dev/how-to-run-your-website-on-kubernetes-minikube)
 - [Integrate Prometheus with your K8s Project](https://akku.hashnode.dev/integrate-prometheus-with-your-k8s-project)
