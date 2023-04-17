@@ -27,6 +27,17 @@ npm install
 npm run dev
 ```
 
+## K8's Installation
+```
+$ minikube start
+
+$ kubectl apply -f k8's/deployment.yaml
+
+$ kubectl apply -f k8's/service.yaml
+
+
+```
+
 ## K8s installation:
 
 {TODOs}
