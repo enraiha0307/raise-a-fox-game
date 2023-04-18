@@ -34,6 +34,8 @@ $ minikube start
 $ kubectl apply -f k8's/deployment.yaml
 
 $ kubectl apply -f k8's/service.yaml
+$ kubectl apply -f k8's/ingress-class.yaml
+$ kubectl apply -f k8's/ingress.yaml
 
 
 ```
