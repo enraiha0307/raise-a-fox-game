@@ -1,6 +1,11 @@
 # raise-a-fox-game
 A cool browser based game. Raise your own fox pet! Feed it, Clean it, Pet it but don't let it die :(
 
+## Blogs related to this:
+- [How to run your website on Kubernetes (Minikube)?](https://akku.hashnode.dev/how-to-run-your-website-on-kubernetes-minikube)
+- [Integrate Prometheus with your K8s Project](https://akku.hashnode.dev/integrate-prometheus-with-your-k8s-project)
+- [Integrate Locust into your K8s Project](https://akku.hashnode.dev/integrate-locust-into-your-k8s-project)
+
 # To play the game
 ```
 1. Clone the repo
@@ -30,25 +35,11 @@ npm run dev
 ## K8's Installation
 ```
 $ minikube start
-
 $ kubectl apply -f k8's/deployment.yaml
-
 $ kubectl apply -f k8's/service.yaml
 $ kubectl apply -f k8's/ingress-class.yaml
 $ kubectl apply -f k8's/ingress.yaml
-
-
 ```
-
-## K8s installation:
-
-{TODOs}
-
-## Blogs related to this:
-- [How to run your website on Kubernetes (Minikube)?](https://akku.hashnode.dev/how-to-run-your-website-on-kubernetes-minikube)
-- [Integrate Prometheus with your K8s Project](https://akku.hashnode.dev/integrate-prometheus-with-your-k8s-project)
-- [Integrate Locust into your K8s Project](https://akku.hashnode.dev/integrate-locust-into-your-k8s-project)
-
 
 ![Screenshot from 2021-11-23 19-28-36 11](https://user-images.githubusercontent.com/26249973/143039150-17e33285-ddfd-4a38-9399-7c8374ec21b5.png)
 ![Screenshot from 2021-11-23 19-28-47 14](https://user-images.githubusercontent.com/26249973/143039228-312f2e21-3398-44da-b86a-0f397e4ee500.png)
