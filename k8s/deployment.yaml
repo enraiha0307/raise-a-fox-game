@@ -16,7 +16,7 @@ spec:
       containers:
        - name: fox-game
          image: akanksha0307/fox-game:v2
-         resources:
+         resources: 
           limits:
            memory: 800Mi
            cpu: "2"
